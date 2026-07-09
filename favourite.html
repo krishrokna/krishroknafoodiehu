@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Items</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("https://e0.pxfuel.com/wallpapers/389/446/desktop-wallpaper-fast-food-restaurant-cafe-wall-decor-hamburger-wall-poster-pizza-mural-trendy-black-background-poster-in-2021-fast-food-restaurant-cafe-wall-fast-food.jpg");
+      margin: 0;
+      padding: 40px;
+    }
+    .favourites {
+      max-width: 900px;
+      margin: auto;
+    }
+    .favourites h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+    .fav-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .fav-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 15px;
+      transition: 0.3s;
+    }
+    .fav-card:hover {
+      transform: translateY(-5px);
+    }
+    .fav-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .fav-card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .fav-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .fav-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .fav-actions button {
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .fav-actions .order-btn {
+      background: #28a745;
+      color: white;
+    }
+    .fav-actions .remove-btn {
+      background: #dc3545;
+      color: white;
+    }
+    .fav-actions button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="favourites">
+    <h2><i class="fa-solid fa-heart"></i> My Favourite Items</h2>
+    <div class="fav-list">
+
+      <!-- Favourite Item 1 -->
+      <div class="fav-card">
+        <img src="https://via.placeholder.com/250x150" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Delicious cheesy pizza with extra toppings.</p>
+        <div class="fav-actions">
+          <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order</button>
+          <button class="remove-btn"><i class="fa-solid fa-trash"></i> Remove</button>
+        </div>
+      </div>
+
+      <!-- Favourite Item 2 -->
+      <div class="fav-card">
+        <img src="https://via.placeholder.com/250x150" alt="Burger">
+        <h3>Veg Burger</h3>
+        <p>Crispy veg patty with fresh veggies.</p>
+        <div class="fav-actions">
+          <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order</button>
+          <button class="remove-btn"><i class="fa-solid fa-trash"></i> Remove</button>
+        </div>
+      </div>
+
+      <!-- Favourite Item 3 -->
+      <div class="fav-card">
+        <img src="https://via.placeholder.com/250x150" alt="Pasta">
+        <h3>White Sauce Pasta</h3>
+        <p>Creamy pasta with exotic vegetables.</p>
+        <div class="fav-actions">
+          <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order</button>
+          <button class="remove-btn"><i class="fa-solid fa-trash"></i> Remove</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

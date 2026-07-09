@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:url("https://e0.pxfuel.com/wallpapers/389/446/desktop-wallpaper-fast-food-restaurant-cafe-wall-decor-hamburger-wall-poster-pizza-mural-trendy-black-background-poster-in-2021-fast-food-restaurant-cafe-wall-fast-food.jpg");
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      background:white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .card i {
+      font-size: 28px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    form textarea {
+      resize: none;
+      height: 80px;
+    }
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 📞 Call Option -->
+    <div class="card">
+      <i class="fa-solid fa-phone"></i>
+      <h2>Call Us</h2>
+      <p><b>Name:</b> Krish Rokna</p>
+      <p><b>Phone:</b> +91 7589257875</p>
+      <p><b>Address:</b> Abohar, Fazilka, Punjab, India</p>
+      <p><b>Email:</b> krishrokna75@gmail.com</p>
+      <p><b>Instagram:</b> @krish__rokna</p>
+    </div>
+
+    <!-- ❓ Help Option -->
+    <div class="card">
+      <i class="fa-solid fa-circle-question"></i>
+      <h2>Help</h2>
+      <p>Need help using our app? 📱</p>
+      <p>- You can track your orders in real-time 🚚</p>
+      <p>- Save your favorite items ❤️</p>
+      <p>- Contact support anytime via chat 💬</p>
+      <p>- For urgent issues, call us directly ☎️</p>
+    </div>
+
+    <!-- 👤 User Contact Form -->
+    <div class="card">
+      <i class="fa-solid fa-user"></i>
+      <h2>User Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Phone" required>
+        <input type="text" placeholder="Your Address">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Write your message..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
